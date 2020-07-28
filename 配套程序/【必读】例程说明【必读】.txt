@@ -15,7 +15,7 @@
 3.UCOSIII_emWin_DEMO_Music
 4.UCOSIII_emWin_DEMO_Recorder
 
-如果下载程序后屏幕没有反应，才用  SD卡结合“刷外部FLASH程序” 按照里面说明重新刷下资源
+直接下载例程运行，如果下载程序后屏幕没有反应，才需要用  SD卡结合“刷外部FLASH程序” 按照里面说明重新刷下资源
 因为程序中emWin运行需要用到存放在外部FLASH的些资源文件
 
 
