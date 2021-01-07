@@ -3,7 +3,7 @@
 #include "flac.h"
 #include "bsp_usart1.h"
 #include "string.h"
-#include "simulation_spi.h"
+//#include "simulation_spi.h"
 
 //VS1053默认设置参数
 _vs1053_obj vsset=
