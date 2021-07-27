@@ -23,7 +23,7 @@
 #include "bsp_SysTick.h"
 
 FATFS fs;													/* Work area (file system object) for logical drives */
-
+int res;
 
 /**
   * @brief  
@@ -36,7 +36,12 @@ int main(void)
 	
 	/* 初始化串口 */
 	USART1_Config();
-	f_mount(&fs,"0:",1);
+	res = f_mount(&fs,"1:",1);
+  if(FR_OK != res)
+  {
+    printf("f mount Error (%d)\r\n", res);
+    while(1);
+  }
 
 	/* 初始化LED */
 	LED_GPIO_Config();
@@ -51,7 +56,7 @@ int main(void)
 	while(1)
 	{
 		// 测试歌曲放在外部FLASH W25Q64中
-		vs1053_player_song("0:/music/TestFile.mp3");
+		vs1053_player_song("1:TestFile.mp3");
 		printf("MusicPlay End\n");
 	}
 	

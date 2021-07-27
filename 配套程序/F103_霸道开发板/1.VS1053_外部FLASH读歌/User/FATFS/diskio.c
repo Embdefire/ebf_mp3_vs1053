@@ -36,8 +36,8 @@
 
 
 /* Definitions of physical drive number for each media */
-#define ATA			1
-#define SPI_FLASH		0
+#define ATA			    0
+#define SPI_FLASH		1
 
 #define SD_BLOCK_SIZE            512 /* Block Size in Bytes */
 

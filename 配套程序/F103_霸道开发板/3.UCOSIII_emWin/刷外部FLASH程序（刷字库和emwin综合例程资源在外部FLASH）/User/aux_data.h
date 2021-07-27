@@ -10,6 +10,7 @@
 #define SD_ROOT       "0:"
 #define FLASH_ROOT    "1:"
 
+
 typedef enum 
 {
     UPDATE,
@@ -31,10 +32,9 @@ typedef enum
     AUX_DATA_ERROR = -1,
   
     AUX_XBF_XINSONGTI, 
-    AUX_HZLIB, 
+    AUX_HZLIB,
 		AUX_GB2312,
     AUX_UNIGBK, 
-    AUX_GB2312_32_32,
     AUX_FILE_SYSTEM,      //FLASH文件系统
   
     AUX_MAX_NUM,
